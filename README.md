@@ -51,7 +51,7 @@ kubectl get cm istio -n istio-system -oyaml
 apiVersion: v1
 data:
   mesh: |-
-    enableTracing: true  <- 追加された
+    enableTracing: true  <- This line was added as a customization setting.
     defaultConfig:
       discoveryAddress: istiod.istio-system.svc:15012
       proxyMetadata:
